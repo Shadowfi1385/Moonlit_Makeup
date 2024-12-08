@@ -364,12 +364,13 @@
     
     local ref = Controller.queue_R_cursor_press
     function Controller:queue_R_cursor_press(x, y)
+        ref(self, x, y)
       local target = self.hovering.target or self.focused.target;
       if target then
         checkTarget(target)
         return;
       end
-      ref(self, x, y)
+      
     end
 
     local set_spritesref = Card.set_sprites
