@@ -253,14 +253,14 @@
     jokerInfo["j_gros_michel"] = {"oh hell yeah banana pooky", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_cavendish"] = {"oh hell yeah banana pooky!!!!!!!!!!!", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_ride_the_bus"] = {"He stepped out of the bus, looking at his surroudings.\nHe had been moving from town to town for a while now.\n''This should be Shillton. Well, it looks cozy enough. Guess I should get settled in.''\n", "\ncreated by Mkv8\n@mkv8 on twitter and bsky!"}
-    jokerInfo["j_space"] = {"''Ohhh, I'd love to go to space one day! I dunno if I'm willing to study the borin' stuff though...", "created by Mkv8\n@mkv8 on twitter and bsky!"}
+    jokerInfo["j_space"] = {"''Ohhh, I'd love to go to space one day!\nI dunno if I'm willing to study the borin' stuff though...", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_hiker"] = {"''Oh, Harper!! Would you wanna go to a hike one day? Like... After we're outta' here?''\n''I've... uhm... Never tried to go on a hike... But uhm.. Maybe?''", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_superposition"] = {"''Ughhhhh this suckssss, who's gonna use this? Ever?''", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_reserved_parking"] = {"if you win half a car twice, what do you have??", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_bull"] = {"IF I GO OUTSIDE WITH ALL THESE POWERS", "created by Gigab00ts\n@gigab00ts on bsky!"}
     jokerInfo["j_ramen"] = {"why does anime food look so good!!!", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_popcorn"] = {"why does anime food look so good!!!", "created by Mkv8\n@mkv8 on twitter and bsky!"}
-    jokerInfo["j_diet cola"] = {"why does anime food look so good!!!", "created by Mkv8\n@mkv8 on twitter and bsky!"}
+    jokerInfo["j_diet_cola"] = {"why does anime food look so good!!!", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_trousers"] = {"''I got these pants a few days ago... They're so comfy...", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_mr_bones"] = {"boo!", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_acrobat"] = {"''I've always been very flexible...\nI know I look like a nerd... And I am one... but I used to do pretty well in gym class!''", "created by Mkv8\n@mkv8 on twitter and bsky!"}
