@@ -1,6 +1,6 @@
 --- STEAMODDED HEADER
 --- MOD_NAME: Moonlit Makeup
---- MOD_ID: Moonlit_Makeup
+--- MOD_ID: moon
 --- MOD_AUTHOR: [Mkv8]
 --- MOD_DESCRIPTION: A mod that reskins every joker, tarot, spectral, planet, booster pack and voucher to match the characters from Moonlit Mansion/Vs. Alfie! It also includes a special menu with descriptions for some of the cards, you can access it on the collection menu by hovering over a card and right clicking! Art and coding by Mkv8, with FlarinthK, Gigab00ts, HermitDweeb, Orio, Pixelated Engie and Ruby Snoot as guest artists!
 --- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-0812d]
@@ -21,7 +21,6 @@
     SMODS.Seal:take_ownership('Red', {atlas = 'centers', pos = {x = 5, y = 4}, badge_colour = HEX('fe5f55')}, true)
     SMODS.Seal:take_ownership('Blue', {atlas = 'centers', pos = {x = 6, y = 4}, badge_colour = HEX('21aaff')}, true)
     SMODS.Seal:take_ownership('Gold', {atlas = 'centers', pos = {x = 2, y = 0}, badge_colour = HEX('ec932a')}, true)
-
     
     SMODS.Consumable:take_ownership('c_chariot', {atlas = 'Tarot'}, true)
     SMODS.Consumable:take_ownership('c_death', {atlas = 'Tarot'}, true)
@@ -374,23 +373,11 @@
     end
 
     local set_spritesref = Card.set_sprites
-    function Card:set_sprites(_center, _front)
-        set_spritesref(self, _center, _front)
-
-        if _center and _center.key == "c_soul" then
-            print(tostring(_center.atlas));
-            self.children.floating_sprite = Sprite(
-                self.T.x,
-                self.T.y,
-                self.T.w,
-                self.T.h,
-                G.ASSET_ATLAS["centers"],
-                { x = 1, y = 0}
-            )
-            self.children.floating_sprite.role.draw_major = self
-            self.children.floating_sprite.states.hover.can = false
-            self.children.floating_sprite.states.click.can = false
-        end
+function Card:set_sprites(_center, _front)
+	set_spritesref(self, _center, _front)
+	if _center and _center.key == "c_soul" then
+        G.shared_soul = Sprite(0, 0, G.CARD_W, G.CARD_H, G.ASSET_ATLAS["moon_centers"], {x=0,y=1})
+	end
 end
 
 ----------------------------------------------

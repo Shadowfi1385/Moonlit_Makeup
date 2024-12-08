@@ -1,0 +1,89 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = 'functions/UI_definitions.lua'
+pattern = '''
+  local t =  create_UIBox_generic_options({ back_func = 'your_collection', contents = {
+        {n=G.UIT.R, config={align = "cm", r = 0.1, colour = G.C.BLACK, emboss = 0.05}, nodes=deck_tables}, 
+        {n=G.UIT.R, config={align = "cm"}, nodes={
+          create_option_cycle({options = joker_options, w = 4.5, cycle_shoulders = true, opt_callback = 'your_collection_joker_page', current_option = 1, colour = G.C.RED, no_pips = true, focus_args = {snap_to = true, nav = 'wide'}})
+        }}
+    }})
+'''
+position = 'at'
+match_indent = true
+payload = '''
+    local t =  create_UIBox_generic_options({ back_func = 'your_collection', contents = {
+        {n=G.UIT.R, config={align = "cm", r = 0.1, colour = G.C.BLACK, emboss = 0.05}, nodes=deck_tables}, 
+        {n=G.UIT.R, config={align = "cm"}, nodes={
+          create_option_cycle({options = joker_options, w = 4.5, cycle_shoulders = true, opt_callback = 'your_collection_joker_page', current_option = G.j_page, colour = G.C.RED, no_pips = true, focus_args = {snap_to = true, nav = 'wide'}})
+        }}
+    }})
+
+    local cycleconfig = {}
+    local args = {}
+
+    cycleconfig.current_option = G.j_page
+    args.cycle_config = cycleconfig
+    
+    G.FUNCS.your_collection_joker_page(args)
+'''
+
+[[patches]]
+[patches.pattern]
+target = 'globals.lua'
+pattern = '''
+self.CHALLENGE_WINS = 5
+'''
+position = 'after'
+match_indent = true
+payload = '''
+self.j_page = 1
+'''
+
+[[patches]]
+[patches.pattern]
+target = 'functions/button_callbacks.lua'
+pattern = '''
+  for j = 1, #G.your_collection do
+    for i = #G.your_collection[j].cards,1, -1 do
+      local c = G.your_collection[j]:remove_card(G.your_collection[j].cards[i])
+      c:remove()
+      c = nil
+    end
+  end
+'''
+position = 'after'
+match_indent = true
+payload = '''
+G.j_page = args.cycle_config.current_option
+'''
+
+[[patches]]
+[patches.pattern]
+target = 'functions/button_callbacks.lua'
+pattern = '''
+G.FUNCS.your_collection = function(e)
+'''
+position = 'after'
+match_indent = true
+payload = '''
+G.j_page = 1
+'''
+
+[[patches]]
+[patches.pattern]
+target = 'functions/button_callbacks.lua'
+pattern = '''
+G.FUNCS.exit_overlay_menu = function()
+  if not G.OVERLAY_MENU then return end
+'''
+position = 'after'
+match_indent = true
+payload = '''
+G.j_page = 1
+'''
