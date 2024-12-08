@@ -267,7 +267,7 @@
     jokerInfo["j_wee"] = {"look at da lil baby so small small fella awwww", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_cavendish"] = {" ", "created by Mkv8\n@mkv8 on twitter and bsky!"}
 
-    jokerInfo["default"] = {"No description", "created by Mkv8\n @mkv8 on twitter and bsky!"}
+    jokerInfo["default"] = {"No description.", "created by Mkv8\n @mkv8 on twitter and bsky!"}
 
     function theMenu(cardInFo)
 
