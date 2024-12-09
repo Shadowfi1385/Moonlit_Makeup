@@ -189,6 +189,73 @@
         "{C:inactive}(Must have room)", },
     }}, true)
 
+    --[[SMODS.quips:take_ownership('lq_1', {loc_txt = {
+                "Maybe Go Fish",
+                "is more our",
+                "speed...",}})
+
+    SMODS.quips:take_ownership('lq_2', {loc_txt = { 
+                "I guess we cracked",
+                "under the pressure...",}})
+
+    SMODS.quips:take_ownership('lq_3', {loc_txt = {
+                "Maybe we should",
+                "shuffle off",
+                "and try again...",}})
+
+    SMODS.quips:take_ownership('lq_4', {loc_txt = {        
+                "That was pretty",
+                "scary...",}})
+
+    SMODS.quips:take_ownership('lq_5', {loc_txt = {
+                "I guess we",
+                "found out we're",
+                "the real Jokers...",}})
+
+    SMODS.quips:take_ownership('lq_6', {loc_txt = { "Oh no, I'm sorry...",}})
+
+    SMODS.quips:take_ownership('lq_7', {loc_txt = {                
+                "Looks like the",
+                "joke's on us...",}})
+
+    SMODS.quips:take_ownership('lq_8', {loc_txt = {                
+                "Uhm... I'm gonna",
+                "cover my eyes...",}})
+    SMODS.quips:take_ownership('lq_9', {loc_txt = {                
+                "I was never good",
+                "at card games...",}})
+
+    SMODS.quips:take_ownership('lq_10', {loc_txt = {"What a flop...",}})
+
+    SMODS.quips:take_ownership('wq_1', {loc_txt = {"Oh wow! You Aced it!",}})
+
+    SMODS.quips:take_ownership('wq_2', {loc_txt = {               
+                "You dealt with",
+                "that pretty well!",}})
+
+    SMODS.quips:take_ownership('wq_3', {loc_txt = {
+                "Oh wow...",
+                "Good job!",}})
+
+    SMODS.quips:take_ownership('wq_4', {loc_txt = {
+                "Too bad these",
+                "chips are all",
+                "virtual...",}})
+
+    SMODS.quips:take_ownership('wq_5', {loc_txt = {
+                "Cat's luck,",
+                "I guess!",}})
+
+    SMODS.quips:take_ownership('wq_6', {loc_txt = {
+                "You made some",
+                "really good plays!",}})
+
+    SMODS.quips:take_ownership('wq_7', {loc_txt = {
+                "Good thing",
+                "I didn't bet",
+                "against you...",}}) ]]
+
+
     local jokerInfo = {}
 
     --the keys are the same ones in en-us.lua
