@@ -2,7 +2,7 @@
 --- MOD_NAME: Moonlit Makeup
 --- MOD_ID: moon
 --- MOD_AUTHOR: [Mkv8]
---- MOD_DESCRIPTION: A mod that reskins every joker, tarot, spectral, planet, booster pack and voucher to match the characters from Moonlit Mansion/Vs. Alfie! It also includes a special menu with descriptions for some of the cards, you can access it on the collection menu by hovering over a card and right clicking! Art and coding by Mkv8, with FlarinthK, Gigab00ts, HermitDweeb, Orio, Pixelated Engie and Ruby Snoot as guest artists!
+--- MOD_DESCRIPTION: A mod that reskins every joker, tarot, spectral, planet, booster pack and voucher to match the characters from Moonlit Mansion/Vs. Alfie! It also includes a special menu with descriptions for some of the cards, you can access it on the collection menu by hovering over a card and right clicking! Art and coding by Mkv8, with coding help from Shadowfi and FlarinthK, Gigab00ts, HermitDweeb, Orio, Pixelated Engie and Ruby Snoot as guest artists!
 --- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-0812d]
 --- 
 ----------------------------------------------
@@ -285,6 +285,12 @@
         else
             desc = jokerInfo['default'][1];
             credit = jokerInfo["default"][2];
+        end
+
+        if not cardInFo.config.center.discovered and not cardInFo.config.center.demo and not cardInFo.bypass_discovery_center then
+            name = "Locked"
+            desc = "                                          ";
+            credit = "";
         end
 
         return create_UIBox_generic_options({ back_func = 'your_collection_jokers', contents = {
