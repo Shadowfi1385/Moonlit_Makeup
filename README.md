@@ -1,0 +1,2 @@
+# Moonlit Makeup
+A mod that reskins every joker, tarot, spectral, planet, booster pack and voucher to match the characters from Moonlit Mansion/Vs. Alfie! It also includes a special menu with descriptions for some of the cards, you can access it on the collection menu by hovering over a card and right clicking! Art and coding by Mkv8, with coding help from Shadowfi and FlarinthK, Gigab00ts, HermitDweeb, Orio, Pixelated Engie and Ruby Snoot as guest artists!
