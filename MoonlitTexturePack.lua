@@ -250,7 +250,7 @@
     jokerInfo["j_marble"] = {"A statue of Ethlyn, from back when she was still alive.\nThe structure of the statue is worn down, but you can still make out its features.", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_pareidolia"] = {"I think you're just seeing things.", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_gros_michel"] = {"oh hell yeah banana pooky", "created by Mkv8\n@mkv8 on twitter and bsky!"}
-    jokerInfo["j_cavendish"] = {"oh hell yeah banana pooky!!!!!!!!!!!", "created by Mkv8\n@mkv8 on twitter and bsky!"}
+    jokerInfo["j_cavendish"] = {"oh hell yeah banana pooky", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_ride_the_bus"] = {"He stepped out of the bus, looking at his surroudings.\nHe had been moving from town to town for a while now.\n''This should be Shillton. Well, it looks cozy enough. Guess I should get settled in.''\n", "\ncreated by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_space"] = {"''Ohhh, I'd love to go to space one day!\nI dunno if I'm willing to study the borin' stuff though...", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_hiker"] = {"''Oh, Harper!! Would you wanna go to a hike one day? Like... After we're outta' here?''\n''I've... uhm... Never tried to go on a hike... But uhm.. Maybe?''", "created by Mkv8\n@mkv8 on twitter and bsky!"}
@@ -265,6 +265,7 @@
     jokerInfo["j_acrobat"] = {"''I've always been very flexible...\nI know I look like a nerd... And I am one... but I used to do pretty well in gym class!''", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_wee"] = {"look at da lil baby so small small fella awwww", "created by Mkv8\n@mkv8 on twitter and bsky!"}
     jokerInfo["j_cavendish"] = {" ", "created by Mkv8\n@mkv8 on twitter and bsky!"}
+    jokerInfo["j_supernova"] = {"No description.", "created by HermitDweeb\n@Butter_art on twitter and @hermitdweeb bsky!"}
 
     jokerInfo["default"] = {"No description.", "created by Mkv8\n @mkv8 on twitter and bsky!"}
 
